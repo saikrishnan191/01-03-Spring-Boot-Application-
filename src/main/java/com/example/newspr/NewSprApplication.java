@@ -8,6 +8,10 @@ public class NewSprApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(NewSprApplication.class, args);
+        ConfigurableApplicationContext run = SpringApplication.run(Application.class,args);
+
+        run.close();
+
     }
 
 }
